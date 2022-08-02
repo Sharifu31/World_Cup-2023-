@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    height: 70vh;
+    width: 70%;
+    background-color: rgb(0, 72, 92);
+    display: flex;
+    border-radius: 10px;
+}
+.header_text{
+    height: 100%;
+    width:50%;
+    color:white;
+    padding: 50px 60px;
+}
+.link_style:hover{
+    color:rgb(2, 2, 2);
+    background-color:greenyellow;
+    transition: all 1s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.link_style{
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.header_image{
+    height: 100%;
+    width:50%;
+    
+}
+.header_image img{
+    height:100%;
+    max-width:100%;
+}
+/*----------------------------------------
+------------upcoming_match-----------------
+-----------------------------------------*/
+
+.upcoming_match{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.match_scheduel{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 250px repeat(1,1fr);
+    column-gap: 20px;
+    border-radius: 10px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00485C;
+    padding: 30px;
+    row-gap: 30px;
+    max-height: 250px;
+    border-radius: 5px;
+}
+.link button {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.selected{
+    background-color: red;
+    color: rgb(8, 8, 8);
+    border:1px solid red;
+    border-radius: 5px; 
+    
+}
+.match_distribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.informaton_match{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.image_text{
+    border: 2px solid rgb(199, 212, 224);
+    background-color: rgb(220, 230, 240);
+    border-radius: 12px;
+    padding:5px;
+}
+.image_text2{
+    border: 2px solid rgb(199, 212, 224);
+    background-color: rgb(220, 230, 240);
+    border-radius: 12px;
+    padding:5px;
+}
+.p_style{
+    font-size: 13px;
+}
+.image_text2 img{
+    width: 100%;
+}
+.image_text img{
+    width: 100%;
+}
+.icon_style{
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+.upcoming_matc2{
+    margin-top: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.match_schedue2{
+    margin-top: -20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.View{
+    display: none;
+}
+/*--------------------------------------
+footer
+---------------------------------------*/
+.footer{
+    background-color: rgb(34, 30, 30);
+    padding-top: 10%;
+    text-align: center;
+    color:white
+}
+.input {
+    margin-bottom: 30px;
+    border: 0px;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    height: 1px;
+    width: 90%;
+    text-align: center;
+}
+.footer_link{
+    justify-content: center;
+    display: flex;
+    gap:60px;
+    flex-wrap: wrap;
+}
+.footer_link2{
+    text-decoration: none;
+    color:white;
+}
+.facebook{
+    margin-left: 50px;
+    font-size: 40px;
+    color:#1093F3;
+}
+.linkdin{
+    margin-left: 50px;
+    font-size: 40px;
+    color:#0077B5;
+}
+.whatsapp{
+    margin-left: 50px;
+    font-size: 40px;
+    color:#2CD546;
+}
+
+
+
+
+
+/*----------------------------------------
+------------tablet device-----------------
+-----------------------------------------*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    .header{
+        height: 40vh;
+    }
+    .hide{
+        display: none;
+    }
+    .header_text{
+        padding: 50px 30px;
+    }
+    .upcoming_match{
+        margin-top: -260px;
+    }
+    .match_scheduel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        background-color: transparent;
+        padding: 20px;     
+    }
+    .link button {
+        font-size: 20px;
+        padding: 10px 20px; 
+    }
+    .selected{
+        background-color: red;
+        color: rgb(8, 8, 8);
+        border:1px solid red;
+        border-radius: 5px;
+        padding: 10px 0px; 
+    }
+    .link2{
+        padding: 40px ;
+    }
+    .link3{
+        padding: 15px ;
+    }
+    .informaton_match{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tablet_hide{
+        display:none;
+    }
+    .upcoming_matc2{
+        margin-top: -15%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+    .match_schedue2{
+        margin-top: -20%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .View{
+        padding: 10px 50px;
+        background-color: red;
+        display: ruby;
+        border-radius: 5px;
+    }
+    .footer{
+        margin-top:-10%;
+    }
+    .footer_link{
+        margin-left: 22%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+
+
+
+/*----------------------------------------
+------------mobile device-----------------
+-----------------------------------------*/
+@media screen and (min-width:576px) and (max-width:789px) {
+    body{
+        margin-top: -20%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        height:50vh;
+        font-size: 13px;
+        align-items: center;  
+    }
+    .header_text{
+        text-align: center;
+        min-width: 300px;
+    }
+    .hide{
+        display: none;
+    }
+    .upcoming_match{
+        margin-top:-40% ;
+    }
+    .match_scheduel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link{
+        background-color:transparent;
+        row-gap: 10px;
+    }
+    .link button{
+        padding:10px 20px;
+    }
+    .informaton_match{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    .tablet_hide{
+        display:none;
+    }
+    .upcoming_matc2{
+        display: none;
+    }
+    .footer{
+        margin-top: 125%;
+    }
+    .footer_link{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
